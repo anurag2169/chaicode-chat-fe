@@ -237,7 +237,7 @@ export default function ChatPage() {
     setStreamResponse("");
 
     try {
-      const res = await fetch("https://chaicode-chat-be.vercel.app/chat", {
+      const res = await fetch("https://chaicode-chat-be.onrender.com/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

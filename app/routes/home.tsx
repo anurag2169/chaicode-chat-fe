@@ -31,8 +31,7 @@ const HomePage = () => {
       title: "DevOps Engineer & Cloud Architect",
       description:
         "Specialized in DevOps, Cloud Computing, Docker, Kubernetes, and system architecture. Passionate about scalable solutions.",
-      image:
-        "/piyush-sir.jpg",
+      image: "/piyush-sir.jpg",
       specialties: ["DevOps", "AWS", "Docker", "Kubernetes"],
       experience: "8+ Years",
       students: "200K+",
@@ -68,18 +67,6 @@ const HomePage = () => {
                 className="text-gray-300 hover:text-orange-400 transition-colors"
               >
                 Mentors
-              </a>
-              <a
-                href="#about"
-                className="text-gray-300 hover:text-orange-400 transition-colors"
-              >
-                About
-              </a>
-              <a
-                href="#contact"
-                className="text-gray-300 hover:text-orange-400 transition-colors"
-              >
-                Contact
               </a>
             </nav>
           </div>
