@@ -2,9 +2,12 @@
 
 A beautiful, modern chat application built with React, TypeScript, and Tailwind CSS. Connect with industry experts and get personalized guidance through our AI-powered chat platform.
 
+## preview : https://chaicode-chat-fe.vercel.app/
+
 ## ✨ Features
 
 ### 🏠 Home Page
+
 - **Beautiful Landing Page**: Modern dark theme with gradient backgrounds
 - **Mentor Profiles**: Detailed cards for industry experts (Hitesh Choudhary & Piyush Garg)
 - **Professional Design**: Clean typography, hover effects, and micro-interactions
@@ -12,9 +15,10 @@ A beautiful, modern chat application built with React, TypeScript, and Tailwind 
 - **Responsive Layout**: Optimized for all screen sizes
 
 ### 💬 Chat Interface
+
 - **ChatGPT-Style Design**: Modern conversation layout with message bubbles
 - **Real-time Streaming**: Live AI responses with streaming support
-- **Rich Text Formatting**: 
+- **Rich Text Formatting**:
   - Code syntax highlighting
   - Markdown-style links
   - Bold text formatting
@@ -35,17 +39,20 @@ A beautiful, modern chat application built with React, TypeScript, and Tailwind 
 ## 📦 Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone <repository-url>
    cd chaicode-chat-app
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start the development server**
+
    ```bash
    npm run dev
    ```
@@ -63,10 +70,13 @@ A beautiful, modern chat application built with React, TypeScript, and Tailwind 
 ## 🔧 Configuration
 
 ### Environment Setup
+
 The app expects a chat API endpoint at `http://localhost:3000/chat`. Make sure your backend server is running on port 3000.
 
 ### API Integration
+
 The chat functionality connects to a streaming endpoint that should:
+
 - Accept POST requests with JSON body: `{ message: string }`
 - Return Server-Sent Events (SSE) format
 - Stream responses in chunks with `data: { content: string }` format
@@ -74,6 +84,7 @@ The chat functionality connects to a streaming endpoint that should:
 ## 📱 Responsive Design
 
 The application is fully responsive and optimized for:
+
 - **Desktop**: Full-width layout with sidebar navigation
 - **Tablet**: Adapted grid layouts and touch-friendly interactions
 - **Mobile**: Stacked layouts and mobile-optimized navigation
@@ -82,7 +93,7 @@ The application is fully responsive and optimized for:
 
 1. **Home Page**: Browse mentor profiles and learn about their expertise
 2. **Select Mentor**: Click on any mentor card to start a conversation
-3. **Chat Interface**: 
+3. **Chat Interface**:
    - Type your message in the input field
    - Press Enter to send (Shift+Enter for new lines)
    - Watch AI responses stream in real-time
@@ -114,12 +125,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👥 Mentors Featured
 
 ### Hitesh Choudhary
+
 - **Expertise**: JavaScript, React, Node.js, MongoDB
 - **Experience**: 10+ Years
 - **Students**: 500K+
 - **Social**: [Twitter](https://twitter.com/Hiteshdotcom) | [GitHub](https://github.com/hiteshchoudhary) | [LinkedIn](https://linkedin.com/in/hiteshchoudhary)
 
 ### Piyush Garg
+
 - **Expertise**: DevOps, AWS, Docker, Kubernetes
 - **Experience**: 8+ Years
 - **Students**: 200K+
