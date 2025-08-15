@@ -12,6 +12,7 @@ const HomePage = () => {
     {
       id: 1,
       name: "Hitesh Choudhary",
+      personName: "hitesh",
       title: "Educator and Mentor",
       description:
         "Expert in JavaScript, React, Node.js, and modern web development. Creator of popular programming tutorials and courses.",
@@ -28,6 +29,7 @@ const HomePage = () => {
     {
       id: 2,
       name: "Piyush Garg",
+      personName: "piyush",
       title: "DevOps Engineer & Cloud Architect",
       description:
         "Specialized in DevOps, Cloud Computing, Docker, Kubernetes, and system architecture. Passionate about scalable solutions.",
@@ -110,7 +112,8 @@ const HomePage = () => {
             {mentors.map((mentor) => (
               <Link
                 key={mentor.id}
-                to="/chat"
+                // to="/chat"
+                to={`/chat-person/${mentor.personName}`}
                 className="group bg-gray-800 border border-gray-700 rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
               >
                 <div className="p-8">

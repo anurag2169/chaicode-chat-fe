@@ -8,6 +8,7 @@ import {
   ArrowLeft,
 } from "lucide-react";
 import { Link } from "react-router";
+import { useParams } from "react-router";
 
 // Function to format AI responses with proper styling
 const formatResponse = (text: string) => {
@@ -215,7 +216,8 @@ const formatTextWithBold = (text: string) => {
   });
 };
 
-export default function ChatPage() {
+export default function ChatPagePerson() {
+  const { personName } = useParams();
   const [message, setMessage] = useState("");
   const [streamResponse, setStreamResponse] = useState("");
   const [streaming, setStreaming] = useState(false);
@@ -242,7 +244,7 @@ export default function ChatPage() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ message: userMessage, mentor: "hitesh" }),
+        body: JSON.stringify({ message: userMessage, mentor: personName }),
       });
 
       const reader = res?.body?.getReader();
